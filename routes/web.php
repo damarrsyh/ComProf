@@ -35,7 +35,7 @@ Route::post('/registration', [AuthController::class, 'registration'])->middlewar
 Route::post('/', [AuthController::class, 'authenticate']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home.layout.main');
 
 Route::prefix('header')->group(function () {
     Route::get('/index', [HeaderController::class, 'index'])->middleware('auth');

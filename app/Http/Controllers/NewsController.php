@@ -10,7 +10,7 @@ use App\Models\Gallery;
 use Illuminate\Support\Facades\Storage;
 
 
-class newsController extends Controller
+class NewsController extends Controller
 {
     public function index($id)
     {

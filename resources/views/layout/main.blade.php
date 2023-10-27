@@ -14,9 +14,12 @@
 {{-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
     rel="stylesheet" type="text/css" /> --}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> --}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <!-- SimpleLightbox plugin CSS-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
 <!-- Core theme CSS (includes Bootstrap)-->
@@ -27,9 +30,6 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- Custom fonts for this template-->
 <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-<link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
 </head>
 
 <body>
@@ -43,17 +43,27 @@
             <div class="collapse navbar-collapse p-2" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     @if (session('role') == 'admin')
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="/dashboard/index">Dashboard</a>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="/dashboard/index">Dashboard</a>
                     </li>
                     @endif
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#portfolio">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#article">Article</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#news">News</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#contact">Contact</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#portfolio">Gallery</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#services">Services</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#article">Article</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#about">About</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#news">News</a></li>
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link dropdown-toggle fs-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                            <li><a class="dropdown-item" href="#">Our Customers</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#contact">Contact</a></li>
                     @if (session('role') == 'admin')
-                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="/logout">Logout</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="/logout">Logout</a></li>
                 @endif
                 </ul>
             </div>
@@ -135,6 +145,8 @@
     @yield('pages')
 
     <!-- Mitra Kerja -->
+    <h2 class="text-center textheader fw-bold">OUR PARTNER</h2>
+    <hr class="divider">
     <div class="container align-items-center my-5 py-5" data-aos="fade-in" data-aos-duration="1000">
         <div class="row text-center my-6">
             <div class="col-3 my-3 text-center px-3 py-3" style="border-radius: 15px">
@@ -174,95 +186,146 @@
         </div>
     </div>
 
-    <!-- Contact-->
-    <div class="container my-5 py-5" id="contact" data-aos="fade-in" data-aos-duration="1000">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
-                <h2 class="mt-0 textheader fw-bold">CONTACT</h2>
-                <hr class="divider" />
-            </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-            <div class="col-lg-6">
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <!-- Name input-->
-                <div class="form-floating mb-3">
-                    <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                    data-sb-validations="required" />
-                    <label for="name">Full name</label>
-                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                </div>
-                <!-- Email address input-->
-                <div class="form-floating mb-3">
-                    <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                    data-sb-validations="required,email" />
-                    <label for="email">Email address</label>
-                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                </div>
-                <!-- Phone number input-->
-                <div class="form-floating mb-3">
-                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                    data-sb-validations="required" />
-                    <label for="phone">Phone number</label>
-                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                </div>
-                <!-- Message input-->
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                    style="height: 10rem" data-sb-validations="required"></textarea>
-                    <label for="message">Message</label>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
-                    <br />
-                    <a
-                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+    <section class="page-section bg-primary" id="contact">
+        <div class="container-fluid ms-auto" data-aos="fade-in" data-aos-duration="1000">
+            <h2 class="text-center text-white textheader mt-0 fw-bold">CONTACT AND BRANCH</h2>
+            <hr class="divider bg-white"/>
+            <br>
+            <div class="row mx-5">
+                <div class="col-md-4">
+                    <h3 class="mx-5 text-center text-white fs-1">
+                        Complaint Services :
+                    </h3>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="text-white">
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-phone mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">021 21279772</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-envelope mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">headoffice.kopmum@gmail.com</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-regular fa-calendar-days mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Senin - Jumat</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="text-white">
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-clock mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">08:00 WIB - 16:00 WIB</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-brands fa-instagram mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">kspmumpusat</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-brands fa-facebook mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Ksp Mitra Usaha Mandiri</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                <div class="col-md-8">
+                    <h3 class="mx-5 text-center text-white fs-1">
+                        Our Branch :
+                    </h3>
+                    <br>
+                    <div class="row">
+                        <div class="col"> 
+                            <ul class="text-white">
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Plered</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Karawang</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Subang</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Indramayu</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="text-white">
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Jatirogo</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Rembang</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Blora</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Pati</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="text-white">
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Klaten</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Boyolali</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
+                                    <span class="fs-2 mx-3">Purbalingga</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>v
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <!-- Submit Button-->
-                <div class="d-grid">
-                    <button class="btn btn btn-xl disabled btn-primary" id="submitButton"
-                    type="submit">Submit</button>
-                </div>
-                </form>
             </div>
         </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                <div>(021) 212 796 62</div>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <!--End Content-->
-
-    <footer class="bg-dark py-5">
+    <footer class="bg-grey py-5">
         <div class="px-4 px-lg-5">
         <a href="/sign_in" style="text-decoration: none">
-            <div class="small text-center text-muted">Copyright &copy; 2022 - Mitra Usaha Mandiri</div>
+            <div class="small text-center text-muted">Copyright &copy; 2023 - Mitra Usaha Mandiri</div>
         </a>
         </div>
     </footer>
