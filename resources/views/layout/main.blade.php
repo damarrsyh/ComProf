@@ -43,27 +43,27 @@
             <div class="collapse navbar-collapse p-2" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     @if (session('role') == 'admin')
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="/dashboard/index">Dashboard</a>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="/dashboard/index">Dashboard</a>
                     </li>
                     @endif
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#portfolio">Gallery</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#services">Services</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#article">Article</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#about">About</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#news">News</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#portfolio">Gallery</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#services">Services</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#article">Article</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#about">About</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#news">News</a></li>
                     <li class="nav-item mx-2 dropdown">
-                        <a class="nav-link dropdown-toggle fs-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             More
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Our Team</a></li>
-                            <li><a class="dropdown-item" href="#">Our Customers</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item fs-5" href="#">Our Team</a></li>
+                            <li><a class="dropdown-item fs-5" href="#">Our Customers</a></li>
+                            <li><a class="dropdown-item fs-5" href="#">Blog</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="#contact">Contact</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#contact">Contact</a></li>
                     @if (session('role') == 'admin')
-                    <li class="nav-item mx-2"><a class="nav-link fs-3" href="/logout">Logout</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="/logout">Logout</a></li>
                 @endif
                 </ul>
             </div>
@@ -193,7 +193,7 @@
             <br>
             <div class="row mx-5">
                 <div class="col-md-4">
-                    <h3 class="mx-5 text-center text-white fs-1">
+                    <h3 class="mx-5 text-center text-white fs-2">
                         Complaint Services :
                     </h3>
                     <br>
@@ -201,39 +201,39 @@
                         <div class="col">
                             <ul class="text-white">
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-phone mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">021 21279772</span>
+                                    <i class="fa-solid fa-phone mx-2 fs-2"></i>
+                                    <span class="fs-5 mx-3">021 21279772</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-envelope mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">headoffice.kopmum@gmail.com</span>
+                                    <i class="fa-solid fa-envelope mx-2 fs-2"></i>
+                                    <span class="fs-5 mx-3">headoffice.kopmum@gmail.com</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-regular fa-calendar-days mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Senin - Jumat</span>
+                                    <i class="fa-regular fa-calendar-days mx-2 fs-2"></i>
+                                    <span class="fs-5 mx-3">Senin - Jumat</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="col">
                             <ul class="text-white">
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-clock mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">08:00 WIB - 16:00 WIB</span>
+                                    <i class="fa-solid fa-clock mx-2 fs-2"></i>
+                                    <span class="fs-5 mx-3">08:00 WIB - 16:00 WIB</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-brands fa-instagram mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">kspmumpusat</span>
+                                    <i class="fa-brands fa-instagram mx-2 fs-2"></i>
+                                    <span class="fs-5 mx-3">kspmumpusat</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-brands fa-facebook mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Ksp Mitra Usaha Mandiri</span>
+                                    <i class="fa-brands fa-facebook mx-2 fs-2"></i>
+                                    <span class="fs-5 mx-3">Ksp Mitra Usaha Mandiri</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <h3 class="mx-5 text-center text-white fs-1">
+                    <h3 class="mx-5 text-center text-white fs-2">
                         Our Branch :
                     </h3>
                     <br>
@@ -241,54 +241,26 @@
                         <div class="col"> 
                             <ul class="text-white">
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Plered</span>
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Plered</span>
                                     <br>
                                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Karawang</span>
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Karawang</span>
                                     <br>
                                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Subang</span>
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Subang</span>
                                     <br>
                                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Indramayu</span>
-                                    <br>
-                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="text-white">
-                                <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Jatirogo</span>
-                                    <br>
-                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
-                                </li>
-                                <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Rembang</span>
-                                    <br>
-                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
-                                </li>
-                                <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Blora</span>
-                                    <br>
-                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
-                                </li>
-                                <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Pati</span>
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Indramayu</span>
                                     <br>
                                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
                                 </li>
@@ -297,20 +269,48 @@
                         <div class="col">
                             <ul class="text-white">
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Klaten</span>
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Jatirogo</span>
                                     <br>
                                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Boyolali</span>
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Rembang</span>
                                     <br>
                                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
                                 </li>
                                 <li class="my-5" style="list-style: none">
-                                    <i class="fa-solid fa-location-dot mx-2 fs-1"></i>
-                                    <span class="fs-2 mx-3">Purbalingga</span>
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Blora</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Pati</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="text-white">
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Klaten</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Boyolali</span>
+                                    <br>
+                                    <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>
+                                </li>
+                                <li class="my-5" style="list-style: none">
+                                    <i class="fa-solid fa-location-dot fs-3"></i>
+                                    <span class="fs-4 mx-1">Purbalingga</span>
                                     <br>
                                     <span class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium in vero pariatur accusantium at veniam reiciendis ducimus cumque esse, porro omnis accusamus quibusdam. Voluptas eius pariatur, alias earum ad ea.</span>v
                                 </li>
