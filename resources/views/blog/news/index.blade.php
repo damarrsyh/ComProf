@@ -27,62 +27,26 @@
 </head>
 <body>
 
-<!--Menu Bar-->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
-    <div class="container-fluid mx-5 px-4 px-lg-5">
-    <a class="navbar-brand" href="/"><img src="/assets/media/img/mum/lognav.png" height="85px"></a>
-    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation"><i class="fa-solid fa-bars text-light"></i></button>
-        <div class="collapse navbar-collapse p-2" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-                @if (session('role') == 'admin')
-                <li class="nav-item mx-2"><a class="nav-link fs-4" href="/dashboard/index">Dashboard</a>
-                </li>
-                @endif
-                <li class="nav-item mx-2"><a class="nav-link fs-4" href="/">Homepage</a></li>
-                <li class="nav-item mx-2 dropdown">
-                    <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        More
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item fs-5" href="/team/index">Our Team</a></li>
-                        <li><a class="dropdown-item fs-5" href="/customers/index">Our Customers</a></li>
-                        <li><a class="dropdown-item fs-5" href="/blog/index">Blog</a></li>
-                    </ul>
-                </li>
-                @if (session('role') == 'admin')
-                <li class="nav-item mx-2"><a class="nav-link fs-4" href="/logout">Logout</a></li>
-            @endif
-            </ul>
-        </div>
-    </div>
-</nav>
-
-{{-- Header --}}
-<header class="masthead" id="home">
-    <div class="container-fluid ms-auto p-0">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-            @foreach ($headers as $key => $header)
-                <div class="carousel-item {{ $key == 0 ? 'active' : '' }} ">
-                <img src="{{ asset('storage/' . $header->image) }}" class="d-block w-100" alt="...">
-                </div>
-            @endforeach
+    {{-- Menu Bar --}}
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
+        <div class="container-fluid mx-5 px-4 px-lg-5">
+            <a class="navbar-brand p-2" href="/"><img src="/assets/media/img/mum/navbar-logo-ww.png" height="70px"></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-light"></i></button>
+            <div class="collapse navbar-collapse p-2" id="navbarResponsive">
+                <ul class="navbar-nav menu">
+                    @if (session('role') == 'admin')
+                        <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="/dashboard/index">Dashboard</a></li>
+                    @endif
+                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#services">News</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="/">Back</a></li>
+                    @if (session('role') == 'admin')
+                    <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="/logout">Logout</a></li>
+                    @endif
+                </ul>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</header>
+        </div>        
+    </nav>
 
     {{-- Footer --}}
     <footer class="bg-dark py-5">

@@ -57,7 +57,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item fs-5" href="/team/index">Our Team</a></li>
-                            <li><a class="dropdown-item fs-5" href="/customer/index">Our Customers</a></li>
+                            <li><a class="dropdown-item fs-5" href="/customers/index">Our Customers</a></li>
                             <li><a class="dropdown-item fs-5" href="/blog/index">Blog</a></li>
                         </ul>
                     </li>

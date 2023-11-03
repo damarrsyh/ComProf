@@ -10,6 +10,9 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\SummaryController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\TeamController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +25,10 @@ use App\Http\Controllers\SummaryController;
 |
 */
 
-Route::get('/storage-link', function() {
-	$targetFolder = storage_path('app/public');
-	$linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
-	symlink($targetFolder,$linkFolder);
+Route::get('/storage-link', function () {
+    $targetFolder = storage_path('app/public');
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+    symlink($targetFolder, $linkFolder);
 });
 
 
@@ -64,7 +67,6 @@ Route::prefix('gallery')->group(function () {
 });
 
 Route::prefix('article')->group(function () {
-    Route::get('/index/{id}', [ArticleController::class, 'index']);
     Route::get('/aindex', [ArticleController::class, 'aindex'])->middleware('auth');
     Route::get('/create', [ArticleController::class, 'create'])->middleware('auth');
     Route::post('/store', [ArticleController::class, 'store']);
@@ -74,13 +76,24 @@ Route::prefix('article')->group(function () {
 });
 
 Route::prefix('news')->group(function () {
-    Route::get('/index/{id}', [NewsController::class, 'index']);
     Route::get('/aindex', [NewsController::class, 'aindex'])->middleware('auth');
     Route::get('/create', [NewsController::class, 'create'])->middleware('auth');
     Route::post('/store', [NewsController::class, 'store']);
     Route::get('/edit/{id}', [NewsController::class, 'edit'])->middleware('auth');
     Route::post('/update/{id}', [NewsController::class, 'update']);
     Route::post('/destroy/{id}', [NewsController::class, 'destroy']);
+});
+
+Route::prefix('team')->group(function () {
+    Route::get('/index', [TeamController::class, 'index']);
+});
+
+Route::prefix('customers')->group(function () {
+    Route::get('/index', [CustomerController::class, 'index']);
+});
+
+Route::prefix('blog')->group(function () {
+    Route::get('/index', [BlogController::class, 'index']);
 });
 
 Route::prefix('dashboard')->group(function () {
