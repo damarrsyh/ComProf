@@ -71,29 +71,31 @@
     </nav>
 
     {{-- Header --}}
-    <header class="masthead" id="home">
-        <div class="container-fluid ms-auto p-0">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                @foreach ($headers as $key => $header)
-                    <div class="carousel-item {{ $key == 0 ? 'active' : '' }} ">
-                    <img src="{{ asset('storage/' . $header->image) }}" class="d-block w-100" alt="...">
+    <section class="page-section">
+        <header class="masthead" id="home">
+            <div class="container-fluid ms-auto p-0">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    @foreach ($headers as $key => $header)
+                        <div class="carousel-item {{ $key == 0 ? 'active' : '' }} ">
+                        <img src="{{ asset('storage/' . $header->image) }}" class="d-block w-100" alt="...">
+                        </div>
+                    @endforeach
                     </div>
-                @endforeach
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-    </header>
+        </header>
+    </section>
 
     <!-- Content -->
     
@@ -167,6 +169,20 @@
             </div>
         </div>
         <div class="row text-center my-6">
+            <div class="col-4 my-3 text-center px-2 py-3" style="border-radius: 15px">
+                <img class="img-fluid" width=200rem src="/assets/media/img/logos/bprs/bprs_biru.png" alt="..."
+                aria-label="Biru Logo"/>
+            </div>
+            <div class="col-4 my-3 text-center px-2 py-3" style="border-radius: 15px">
+                <img class="img-fluid" width=200rem src="/assets/media/img/logos/bprs/bprs_arthamadani.png" alt="..."
+                aria-label="Arthamadani Logo" />
+            </div>
+            <div class="col-4 my-3 text-center px-2 py-3" style="border-radius: 15px">
+                <img class="img-fluid" width=200rem src="/assets/media/img/logos/bprs/bprs_mulia.png" alt="..."
+                aria-label="Mulia Logo" />
+            </div>
+        </div>
+        <div class="row text-center my-6">
             <div class="col-3 my-3 text-center px-3 py-3" style="border-radius: 15px">
                 <img class="img-fluid" width="150rem" src="/assets/media/img/logos/other/Danamon.svg" alt="..."
                 aria-label="Danamon Logo" />
@@ -200,15 +216,15 @@
                     <div class="row">
                         <div class="col">
                             <ul class="text-white">
-                                <li class="my-5" style="list-style: none">
+                                <li class="my-4" style="list-style: none">
                                     <i class="fa-solid fa-phone mx-2 fs-2"></i>
                                     <span class="fs-5 mx-3">021 21279772</span>
                                 </li>
-                                <li class="my-5" style="list-style: none">
+                                <li class="my-4" style="list-style: none">
                                     <i class="fa-solid fa-envelope mx-2 fs-2"></i>
                                     <span class="fs-5 mx-3">headoffice.kopmum@gmail.com</span>
                                 </li>
-                                <li class="my-5" style="list-style: none">
+                                <li class="my-4" style="list-style: none">
                                     <i class="fa-regular fa-calendar-days mx-2 fs-2"></i>
                                     <span class="fs-5 mx-3">Senin - Jumat</span>
                                 </li>
@@ -216,15 +232,15 @@
                         </div>
                         <div class="col">
                             <ul class="text-white">
-                                <li class="my-5" style="list-style: none">
+                                <li class="my-4" style="list-style: none">
                                     <i class="fa-solid fa-clock mx-2 fs-2"></i>
                                     <span class="fs-5 mx-3">08:00 WIB - 16:00 WIB</span>
                                 </li>
-                                <li class="my-5" style="list-style: none">
+                                <li class="my-4" style="list-style: none">
                                     <i class="fa-brands fa-instagram mx-2 fs-2"></i>
                                     <span class="fs-5 mx-3">kspmumpusat</span>
                                 </li>
-                                <li class="my-5" style="list-style: none">
+                                <li class="my-4" style="list-style: none">
                                     <i class="fa-brands fa-facebook mx-2 fs-2"></i>
                                     <span class="fs-5 mx-3">Ksp Mitra Usaha Mandiri</span>
                                 </li>

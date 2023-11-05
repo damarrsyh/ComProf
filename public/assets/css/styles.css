@@ -12266,7 +12266,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 5.5rem 0;
   background-color: transparent;
 }
 
@@ -12374,8 +12374,6 @@ hr.divider-light {
 }
 
 header.masthead {
-  padding-top: 5rem;
-  padding-bottom: calc(3rem - 1.5rem);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12388,8 +12386,6 @@ header.masthead h1, header.masthead .h1 {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
-    padding-top: 4.5rem;
-    padding-bottom: 0;
   }
   header.masthead p {
     font-size: 1.15rem;
