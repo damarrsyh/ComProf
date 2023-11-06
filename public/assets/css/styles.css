@@ -4095,7 +4095,7 @@ fieldset:disabled .btn {
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
-  margin-top: 0.125rem;
+  margin-top: 2rem;
 }
 
 .dropdown-menu-start {
@@ -6985,7 +6985,7 @@ fieldset:disabled .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 10%;
   padding: 0;
   color: #fff;
   text-align: center;

@@ -1,7 +1,7 @@
 <section class="page-section" id="history">
     <div class="container ms-auto" data-aos="fade-in" data-aos-duration="1000">
         <div class="row">
-            <div class="col-md-8 py-5 px-5 mb-5" style="border-radius: 15px; background: var(--bs-gray-100);">
+            <div class="col py-5 px-5 mb-5" style="border-radius: 15px; background: var(--bs-gray-200);">
                 <div class="text-center pb-5">
                     <h2 class="section-heading textheader fw-bold">MILESTONES</h2>
                     <hr class="divider">
@@ -20,7 +20,7 @@
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="desc text-muted">Tahun 1998 Yayasan Mitra Usaha (YMU) mulai mengembangkan sebuah program 
+                                <p class="text-muted">Tahun 1998 Yayasan Mitra Usaha (YMU) mulai mengembangkan sebuah program 
                                     untuk melayani Keluarga Miskin dengan mereplikasi model Grameen Bank.</p>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="desc text-muted">Lokasi pertama di Kabupaten Bekasi (Propinsi Jawa Barat), Kecamatan Babelan, 
+                                <p class="text-muted">Lokasi pertama di Kabupaten Bekasi (Propinsi Jawa Barat), Kecamatan Babelan, 
                                     Desa Muara Bakti. Secara bertahap program tersebut berkembang dibeberapa lokasi, yaitu Desa Harapan 
                                     Jaya, Desa Taruma Jaya di Kabupaten Bekasi, kemudian di Kabupaten Indramayu, Kabupaten Subang, 
                                     Kabupaten Karawang (Jatiragas) di Propinsi Jawa Barat. Kemudian bergerak ke Propinsi Jawa Tengah 
@@ -62,7 +62,7 @@
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="desc text-muted">Setelah tiga tahun dipandang perlu program tersebut menjadi lembaga otonom 
+                                <p class="text-muted">Setelah tiga tahun dipandang perlu program tersebut menjadi lembaga otonom 
                                     yang terpisah dari YMU dengan Badan Hukum Koperasi ( oleh Kementrian Koperasi RI pada 1 Mei 2001 
                                     No. Badan Hukum : 92/BH/MENEG.I/V/2001).</p>
                             </div>
@@ -81,7 +81,7 @@
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="desc text-muted">KOPMUM pada tahun 2011 pernah memiliki  9 cabang.   Dalam perkembangnya setelah 
+                                <p class="text-muted">KOPMUM pada tahun 2011 pernah memiliki  9 cabang.   Dalam perkembangnya setelah 
                                     dilakukan evaluasi dari segi ketepatan lokasi dan efektifitas serta efesiensi maka dilakukan penggabungan 
                                     dan penutupan sehingga menjadi 6 cabang yang selektif.</p>
                             </div>
@@ -100,14 +100,14 @@
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="desc text-muted">Sampai dengan tahun 2017 KOPMUM memiliki Cabang di Jawa Barat: Indramayu, Subang dan Karawang. 
+                                <p class="text-muted">Sampai dengan tahun 2017 KOPMUM memiliki Cabang di Jawa Barat: Indramayu, Subang dan Karawang. 
                                     Di Jawa Tengah:  Rembang, Pati dan Klaten.</p>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4" id="news">
+            {{-- <div class="col-md-4" id="news">
                  @foreach ($news as $news)    
                 <div class="card artikel pb-3 mb-5" data-aos="fade-in" data-aos-duration="2200">
                 <img src="{{ asset("storage/$news->image") }}" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
@@ -122,7 +122,7 @@
                     </div>
                 </div>
                 @endforeach
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

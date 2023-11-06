@@ -43,27 +43,23 @@
             <div class="collapse navbar-collapse p-2" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     @if (session('role') == 'admin')
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="/dashboard/index">Dashboard</a>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="/dashboard/index">Dashboard</a>
                     </li>
                     @endif
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#portfolio">Gallery</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#services">Services</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#article">Article</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#about">About</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#news">News</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="/blog/index">Blog</a>
                     <li class="nav-item mx-2 dropdown">
-                        <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            More
+                        <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item fs-5" href="/team/index">Our Team</a></li>
                             <li><a class="dropdown-item fs-5" href="/customers/index">Our Customers</a></li>
-                            <li><a class="dropdown-item fs-5" href="/blog/index">Blog</a></li>
+                            <li><a class="dropdown-item fs-5" href="/">Our Profile</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="#contact">Contact</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="/dashboard/index">FAQ</a>
                     @if (session('role') == 'admin')
-                    <li class="nav-item mx-2"><a class="nav-link fs-4" href="/logout">Logout</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="/logout">Logout</a></li>
                 @endif
                 </ul>
             </div>
@@ -105,7 +101,7 @@
         <div class="container-fluid ms-auto">
             <div class="row g-0" data-aos="fade-in" data-aos-duration="1000">
                 @foreach ($summaries as $summary)
-                <div class="col hov my-3 mx-3 text-center bg-light" style="border-radius: 15px;">
+                <div class="col hov my-3 mx-3 text-center" style="border-radius: 15px; background: var(--bs-gray-200);">
                     <div class="my-5 p-3 hov-1">
                         <div class="mb-2">
                             <img src="/assets/media/img/{{ $summary->image }}" alt="" width="100px">
@@ -341,7 +337,7 @@
     <footer class="bg-grey py-5">
         <div class="px-4 px-lg-5">
         <a href="/sign_in" style="text-decoration: none">
-            <div class="small text-center text-muted">Copyright &copy; 2023 - Mitra Usaha Mandiri</div>
+            <div class="small text-center text-muted">&copy; 2023 - Koperasi Mitra Usaha Mandiri</div>
         </a>
         </div>
     </footer>

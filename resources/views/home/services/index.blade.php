@@ -1,20 +1,20 @@
 <section class="page-section" id="services">
     <div class="container ms-auto" data-aos="fade-in" data-aos-duration="1000">
         <div class="row">
-            <div class="col-md-8 py-5 px-5 mb-5" id="services" style="border-radius: 15px; background: var(--bs-gray-100);">
+            <div class="col py-5 px-5 mb-5" id="services" style="border-radius: 15px; background: var(--bs-gray-200);">
                 <h2 class="text-center textheader fw-bold">OUR SERVICES PRODUCTS</h2>
                 <hr class="divider">
                 <div class="row mt-5 justify-content-center">
                     <div class="col-6 text-center hov" data-aos="fade-in" data-aos-duration="1500">
                         <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal1">
-                            <div class="mb-2"><img src="assets/media/img/services/1.png" width="75px"></div>
+                            <div class="mb-2"><img src="assets/media/img/services/1.png" width="90px"></div>
                             <hr class="divider">
                             <h3 class="h4 mb-2 fw-bold px-6">PEMBIAYAAN SISTEM GRAMEEN BANK</h3>
                         </div>
                     </div>
                     <div class="col-6 text-center hov" data-aos="fade-in" data-aos-duration="1500">
                         <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal2">
-                            <div class="mb-2"><img src="assets/media/img/services/4.png" width="75px"></div>
+                            <div class="mb-2"><img src="assets/media/img/services/4.png" width="90px"></div>
                             <hr class="divider">
                             <h3 class="h4 mb-2 fw-bold px-6">PEMBIAYAAN KHUSUS</h3>
                         </div>
@@ -23,14 +23,14 @@
                 <div class="row mt-5 justify-content-center">
                     <div class="col-6 text-center hov" data-aos="fade-in" data-aos-duration="1500">
                         <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal3">
-                            <div class="mb-2"><img src="assets/media/img/services/5.png" width="75px"></div>
+                            <div class="mb-2"><img src="assets/media/img/services/5.png" width="90px"></div>
                             <hr class="divider">
                             <h3 class="h4 mb-2 fw-bold px-6">SIMPANAN BERJANGKA (SIMBA)</h3>
                         </div>
                     </div>
                     <div class="col-6 text-center hov" data-aos="fade-in" data-aos-duration="1500">
                         <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal4">
-                            <div class="mb-2"><img src="assets/media/img/services/3.png" width="75px"></div>
+                            <div class="mb-2"><img src="assets/media/img/services/3.png" width="90px"></div>
                             <hr class="divider">
                             <h3 class="h4 mb-2 fw-bold px-6">SIMPANAN SUKARELA</h3>
                         </div>
@@ -39,21 +39,21 @@
                 <div class="row mt-5 justify-content-center">
                     <div class="col-6 text-center hov" data-aos="fade-in" data-aos-duration="1500">
                         <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal5">
-                            <div class="mb-2"><img src="assets/media/img/services/2.png" width="75px"></div>
+                            <div class="mb-2"><img src="assets/media/img/services/2.png" width="90px"></div>
                             <hr class="divider">
                             <h3 class="h4 mb-2 fw-bold px-6">PELAYANAN KESEHATAN UNTUK PEREMPUAN</h3>
                         </div>
                     </div>
                     <div class="col-6 text-center hov" data-aos="fade-in" data-aos-duration="1500">
                         <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal6">
-                            <div class="mb-2"><img src="assets/media/img/services/7.png" width="75px"></div>
+                            <div class="mb-2"><img src="assets/media/img/services/7.png" width="90px"></div>
                             <hr class="divider">
                             <h3 class="h4 mb-2 fw-bold px-6">PELAYANAN PENGEMBANGAN WIRAUSAHA PEREMPUAN</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4" id="article">
+            {{-- <div class="col-md-4" id="article">
                 @foreach ($article as $article)
                 <div class="card artikel pb-3 mb-5" data-aos="fade-in" data-aos-duration="1000">
                     <img src="{{ asset("storage/$article->image") }}" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 @endforeach
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
