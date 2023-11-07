@@ -31,8 +31,8 @@
 <!-- Custom fonts for this template-->
 <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
+
     <!--Menu Bar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
         <div class="container-fluid mx-5 px-4 px-lg-5">
@@ -57,7 +57,7 @@
                             <li><a class="dropdown-item fs-5" href="/">Our Profile</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="/dashboard/index">FAQ</a>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="/faq/index">FAQ</a>
                     @if (session('role') == 'admin')
                     <li class="nav-item mx-2"><a class="nav-link fs-5" href="/logout">Logout</a></li>
                 @endif
@@ -119,7 +119,7 @@
     <!--End summary-->
 
     <!-- Gallery -->
-    <section class="page-section" id="portfolio">
+    <section class="page-section">
         <div class="container-fluid ms-auto" data-aos="fade-in" data-aos-duration="1000">
             <div class="row g-0">
                 @foreach ($galleries as $key => $gallery)
@@ -198,7 +198,7 @@
         </div>
     </div>
 
-    <section class="page-section bg-primary" id="contact">
+    <section class="page-section bg-primary">
         <div class="container-fluid ms-auto" data-aos="fade-in" data-aos-duration="1000">
             <h2 class="text-center text-white textheader mt-0 fw-bold">CONTACT AND BRANCH</h2>
             <hr class="divider bg-white"/>
@@ -334,7 +334,7 @@
         </div>
     </section>
 
-    <footer class="bg-grey py-5">
+    <footer class="py-5">
         <div class="px-4 px-lg-5">
         <a href="/sign_in" style="text-decoration: none">
             <div class="small text-center text-muted">&copy; 2023 - Koperasi Mitra Usaha Mandiri</div>

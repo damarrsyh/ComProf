@@ -12270,6 +12270,15 @@ body {
   background-color: transparent;
 }
 
+.page-section-header {
+  padding: 5.5rem 0 0 0;
+  background-color: transparent;
+}
+
+.page-section-article {
+  background-color: transparent;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -12742,7 +12751,7 @@ section {
 
 .artikel {
   border-radius: 15px;
-  background: var(--bs-gray-100);
+  background: var(--bs-gray-200);
 }
 
 .arnews-text {

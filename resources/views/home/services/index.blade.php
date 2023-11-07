@@ -1,4 +1,4 @@
-<section class="page-section" id="services">
+<section class="page-section">
     <div class="container ms-auto" data-aos="fade-in" data-aos-duration="1000">
         <div class="row">
             <div class="col py-5 px-5 mb-5" id="services" style="border-radius: 15px; background: var(--bs-gray-200);">
@@ -53,22 +53,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-md-4" id="article">
-                @foreach ($article as $article)
-                <div class="card artikel pb-3 mb-5" data-aos="fade-in" data-aos-duration="1000">
-                    <img src="{{ asset("storage/$article->image") }}" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold text-uppercase" style="letter-spacing: 1px;">{{ $article->title }}</h5>
-                        <p class="card-text desc">{!! Str::limit($article->description, 150, '...') !!}</p>
-                        <a type="button" class="btn btn-primary" href="/article/index/{{ $article->id }}">
-                            <div class="wrapper">
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                @endforeach
-            </div> --}}
         </div>
     </div>
 </section>

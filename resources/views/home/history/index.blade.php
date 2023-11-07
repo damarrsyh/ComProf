@@ -107,22 +107,7 @@
                     </li>
                 </ul>
             </div>
-            {{-- <div class="col-md-4" id="news">
-                 @foreach ($news as $news)    
-                <div class="card artikel pb-3 mb-5" data-aos="fade-in" data-aos-duration="2200">
-                <img src="{{ asset("storage/$news->image") }}" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold text-uppercase" style="letter-spacing: 1px;">{{ $news->title }}</h5>
-                        <p class="card-text desc">{!! Str::limit($news->description, 150, '...') !!}</p>
-                        <a type="button" class="btn btn-primary" href="/news/index/{{ $news->id }}">
-                            <div class="wrapper">
-                                <span>More</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                @endforeach
-            </div> --}}
+
         </div>
     </div>
 </section>
