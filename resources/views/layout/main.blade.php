@@ -119,7 +119,7 @@
     <!--End summary-->
 
     <!-- Gallery -->
-    <section class="page-section">
+    <section class="page-section" id="portfolio">
         <div class="container-fluid ms-auto" data-aos="fade-in" data-aos-duration="1000">
             <div class="row g-0">
                 @foreach ($galleries as $key => $gallery)

@@ -37,12 +37,12 @@
         <div class="collapse navbar-collapse p-2" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 @if (session('role') == 'admin')
-                <li class="nav-item mx-2"><a class="nav-link fs-4" href="/dashboard/index">Dashboard</a>
+                <li class="nav-item mx-2"><a class="nav-link fs-5" href="/dashboard/index">Dashboard</a>
                 </li>
                 @endif
-                <li class="nav-item mx-2"><a class="nav-link fs-4" href="/">Homepage</a></li>
+                <li class="nav-item mx-2"><a class="nav-link fs-5" href="/">Homepage</a></li>
                 <li class="nav-item mx-2 dropdown">
-                    <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         More
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -52,7 +52,7 @@
                     </ul>
                 </li>
                 @if (session('role') == 'admin')
-                <li class="nav-item mx-2"><a class="nav-link fs-4" href="/logout">Logout</a></li>
+                <li class="nav-item mx-2"><a class="nav-link fs-5" href="/logout">Logout</a></li>
             @endif
             </ul>
         </div>
