@@ -35,7 +35,7 @@ class ArticleController extends Controller
         return view('article.create', [
             'title' => 'Article',
         ]);
-        
+
         return back();
     }
 
@@ -46,6 +46,7 @@ class ArticleController extends Controller
             'title' => ['required'],
             'description' => ['required']
         ]);
+        $article_data['preview_description'] = strip_tags($request->description);
 
         if ($request->file('image')) {
             $article_data['image'] = $request->file('image')->store('article_image');
@@ -57,7 +58,7 @@ class ArticleController extends Controller
     public function edit($id)
     {
         return view('article.edit', [
-            
+
             'title' => 'article',
             'article' => Article::where('id', $id)->first()
         ]);
@@ -70,9 +71,10 @@ class ArticleController extends Controller
             'title' => ['required'],
             'description' => ['required'],
         ]);
+        $article_data['preview_description'] = strip_tags($request->description);
 
         if ($request->file('image')) {
-            if($request->oldImage) {
+            if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
             $article_data['image'] = $request->file('image')->store('article_image');
@@ -80,14 +82,13 @@ class ArticleController extends Controller
         Article::where('id', $id)->update($article_data);
         return redirect('/article/aindex');
     }
-    
+
     public function destroy(Request $request)
     {
-        if($request->image) {
+        if ($request->image) {
             Storage::delete($request->image);
         }
         Article::destroy($request->id);
         return redirect('/article/aindex');
     }
-
 }
