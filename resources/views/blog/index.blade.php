@@ -30,7 +30,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    </head>
+</head>
 <body>
 
 <!--Menu Bar-->
@@ -66,7 +66,7 @@
     </div>
 </nav>
 
-<section class="page-section-header">
+{{-- <section class="page-section-header">
     <header class="masthead" id="home">
         <div class="container-fluid ms-auto p-0">
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -90,7 +90,7 @@
             </div>
         </div>
     </header>
-</section>
+</section> --}}
 
 <section class="page-section-article mt-5">
     <div class="container">
@@ -99,25 +99,25 @@
                 @foreach ($article as $article)
                 <div class="card mb-3" >
                     <div class="row">
-                      <div class="col-md-4 my-3">
-                        <img src="{{ asset("storage/$article->image") }}" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body ">
-                          <h3 class="card-title">{{ $article->title }}</h3>
-                          <p class="card-text">{{  Str::limit($article->preview_description) }}</p>
-                          <a type="button" class="btn btn-primary" href="/blog/article/index/{{ $article->id }}">
-                            <div class="wrapper">
-                                <span>More</span>
-                            </div>
-                        </a>
+                        <div class="col-md-4 my-3">
+                            <img src="{{ asset("storage/$article->image") }}" class="img-fluid rounded-start" alt="...">
                         </div>
-                      </div>
+                        <div class="col-md-8">
+                            <div class="card-body ">
+                                <h3 class="card-title">{{ $article->title }}</h3>
+                                <p class="card-text">{{  Str::limit($article->preview_description) }}</p>
+                                <a type="button" class="btn btn-primary" href="/article/index/{{ $article->id }}">
+                                    <div class="wrapper">
+                                        <span>More</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 @endforeach
             </div>
-            <div class="col-md-3 ">
+            <div class="col-md-3">
                 <div class="row">
                     @foreach ($news as $news)
                     <div class="col">

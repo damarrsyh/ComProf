@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 use App\Models\News;
 use App\Models\Header;
@@ -14,11 +15,12 @@ class NewsController extends Controller
 {
     public function index($id)
     {
-        return view('news.index', [
+        return view('blog.news.index', [
             'news' => News::where('id', $id)->first(),
             'headers' => Header::all(),
             'summaries' => Summary::all(),
-            'galleries' => Gallery::all()
+            'galleries' => Gallery::all(),
+            'article' => Article::all()
         ]);
     }
 

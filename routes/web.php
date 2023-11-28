@@ -67,6 +67,7 @@ Route::prefix('gallery')->group(function () {
 });
 
 Route::prefix('article')->group(function () {
+    Route::get('/index/{id}', [ArticleController::class, 'index']);
     Route::get('/aindex', [ArticleController::class, 'aindex'])->middleware('auth');
     Route::get('/create', [ArticleController::class, 'create'])->middleware('auth');
     Route::post('/store', [ArticleController::class, 'store']);
@@ -76,6 +77,7 @@ Route::prefix('article')->group(function () {
 });
 
 Route::prefix('news')->group(function () {
+    Route::get('/index/{id}', [NewsController::class, 'index']);
     Route::get('/aindex', [NewsController::class, 'aindex'])->middleware('auth');
     Route::get('/create', [NewsController::class, 'create'])->middleware('auth');
     Route::post('/store', [NewsController::class, 'store']);

@@ -7,6 +7,7 @@ use App\Models\Article;
 use App\Models\Header;
 use App\Models\Summary;
 use App\Models\Gallery;
+use App\Models\News;
 use Illuminate\Support\Facades\Storage;
 
 
@@ -16,11 +17,12 @@ class ArticleController extends Controller
     {
         // return 'masuk';
         $article = Article::all();
-        return view('article.index', [
+        return view('blog.article.index', [
             'article' => Article::where('id', $id)->first(),
             'headers' => Header::all(),
             'summaries' => Summary::all(),
-            'galleries' => Gallery::all()
+            'galleries' => Gallery::all(),
+            'news' => News::all()
         ]);
     }
 
