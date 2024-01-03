@@ -11,7 +11,7 @@ use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\SummaryController;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\TeamController;
 
 /*
@@ -91,7 +91,11 @@ Route::prefix('team')->group(function () {
 });
 
 Route::prefix('customers')->group(function () {
-    Route::get('/index', [CustomerController::class, 'index']);
+    Route::get('/index', [CustomersController::class, 'index']);
+    Route::get('/aindex', [CustomersController::class, 'aindex'])->middleware('auth');
+    Route::get('/create', [CustomersController::class, 'create'])->middleware('auth');
+    Route::post('/store', [CustomersController::class, 'store']);
+    Route::post('/destroy/{id}', [CustomersController::class, 'destroy']);
 });
 
 Route::prefix('blog')->group(function () {

@@ -1,8 +1,8 @@
 <section class="page-section" id="history">
-    <div class="container ms-auto" data-aos="fade-in" data-aos-duration="1000">
-        <div class="row">
-            <div class="col py-5 px-5 mb-5" style="border-radius: 15px; background: var(--bs-gray-200);">
-                <div class="text-center pb-5">
+    <div class="container">
+        <div class="row gx-4 gx-lg-5 py-5 justify-content-center">
+            <div class="col pb-5" style="border-radius: 15px; background: var(--bs-gray-200);">
+                <div class="text-center py-5">
                     <h2 class="section-heading textheader fw-bold">MILESTONES</h2>
                     <hr class="divider">
                 </div>
@@ -14,7 +14,7 @@
                                 Awal
                             </h4>
                         </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1100">
+                        <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Awal Pembentukan</h4>
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -34,7 +34,7 @@
                                 MUM
                             </h4>
                         </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1200">
+                        <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Lokasi</h4>
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -56,7 +56,7 @@
                                 Lembaga
                             </h4>
                         </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1300">
+                        <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Lembaga Otonom</h4>
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -75,7 +75,7 @@
                                 Evaluasi
                             </h4>
                         </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1400">
+                        <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Evaluasi</h4>
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -94,7 +94,7 @@
                                 Cabang
                             </h4>
                         </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1500">
+                        <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Cabang</h4>
                                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -107,7 +107,6 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 </section>
