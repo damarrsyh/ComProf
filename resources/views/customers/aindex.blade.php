@@ -14,7 +14,7 @@
   </div>
 
   <div class="row">
-    <div class="col-12 table-responsive d-flex">
+    <div class="col table-responsive d-flex">
       <table class="table table-borderless md-auto">
         <thead class="table-dark" align="center">
           <tr>
@@ -35,11 +35,11 @@
               <td class="col-2"><img src="{{ asset("storage/$customers->image") }}" alt="" width="150px"></td>
               <td class="col-1">{{ $customers->name }}</td>
               <td class="col-1">{{ $customers->branch }}</td>
-              <td class="col-1">{{ $customers->business }}</td>
+              <td class="col-2">{{ $customers->business }}</td>
               <td class="col-2">{{ $customers->financing }}</td>
               <td class="col-3">
                 {!! Str::limit($customers->description, 400, '...') !!}</td>
-              <td class="col-2">
+              <td class="col-1">
                 <a href="/customers/edit/{{ $customers->id }}" class="btn btn-success mx-3">Edit</a>
                 <form class="d-inline" action="/customers/destroy/{{ $customers->id }}" method="POST">
                   @csrf

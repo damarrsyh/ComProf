@@ -26,9 +26,9 @@ use App\Http\Controllers\TeamController;
 */
 
 Route::get('/storage-link', function () {
-    $targetFolder = storage_path('app/public');
-    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
-    symlink($targetFolder, $linkFolder);
+  $targetFolder = storage_path('app/public');
+  $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+  symlink($targetFolder, $linkFolder);
 });
 
 
@@ -41,67 +41,69 @@ Route::get('/logout', [AuthController::class, 'logout']);
 Route::get('/', [HomeController::class, 'index'])->name('home.layout.main');
 
 Route::prefix('header')->group(function () {
-    Route::get('/index', [HeaderController::class, 'index'])->middleware('auth');
-    Route::get('/create', [HeaderController::class, 'create'])->middleware('auth');
-    Route::post('/store', [HeaderController::class, 'store']);
-    Route::get('/edit/{id}', [HeaderController::class, 'edit'])->middleware('auth');
-    Route::post('/update/{id}', [HeaderController::class, 'update']);
-    Route::post('/destroy/{id}', [HeaderController::class, 'destroy']);
+  Route::get('/index', [HeaderController::class, 'index'])->middleware('auth');
+  Route::get('/create', [HeaderController::class, 'create'])->middleware('auth');
+  Route::post('/store', [HeaderController::class, 'store']);
+  Route::get('/edit/{id}', [HeaderController::class, 'edit'])->middleware('auth');
+  Route::post('/update/{id}', [HeaderController::class, 'update']);
+  Route::post('/destroy/{id}', [HeaderController::class, 'destroy']);
 });
 
 Route::prefix('summary')->group(function () {
-    Route::get('/index', [SummaryController::class, 'index'])->middleware('auth');
-    Route::get('/create', [SummaryController::class, 'create'])->middleware('auth');
-    Route::post('/store', [SummaryController::class, 'store']);
-    Route::get('/edit/{id}', [SummaryController::class, 'edit'])->middleware('auth');
-    Route::post('/update/{id}', [SummaryController::class, 'update']);
+  Route::get('/index', [SummaryController::class, 'index'])->middleware('auth');
+  Route::get('/create', [SummaryController::class, 'create'])->middleware('auth');
+  Route::post('/store', [SummaryController::class, 'store']);
+  Route::get('/edit/{id}', [SummaryController::class, 'edit'])->middleware('auth');
+  Route::post('/update/{id}', [SummaryController::class, 'update']);
 });
 
 Route::prefix('gallery')->group(function () {
-    Route::get('/index', [GalleryController::class, 'index'])->middleware('auth');
-    Route::get('/create', [GalleryController::class, 'create'])->middleware('auth');
-    Route::post('/store', [GalleryController::class, 'store']);
-    Route::get('/edit/{id}', [GalleryController::class, 'edit'])->middleware('auth');
-    Route::post('/update/{id}', [GalleryController::class, 'update']);
-    Route::post('/destroy/{id}', [GalleryController::class, 'destroy']);
+  Route::get('/index', [GalleryController::class, 'index'])->middleware('auth');
+  Route::get('/create', [GalleryController::class, 'create'])->middleware('auth');
+  Route::post('/store', [GalleryController::class, 'store']);
+  Route::get('/edit/{id}', [GalleryController::class, 'edit'])->middleware('auth');
+  Route::post('/update/{id}', [GalleryController::class, 'update']);
+  Route::post('/destroy/{id}', [GalleryController::class, 'destroy']);
 });
 
 Route::prefix('article')->group(function () {
-    Route::get('/index/{id}', [ArticleController::class, 'index']);
-    Route::get('/aindex', [ArticleController::class, 'aindex'])->middleware('auth');
-    Route::get('/create', [ArticleController::class, 'create'])->middleware('auth');
-    Route::post('/store', [ArticleController::class, 'store']);
-    Route::get('/edit/{id}', [ArticleController::class, 'edit'])->middleware('auth');
-    Route::post('/update/{id}', [ArticleController::class, 'update']);
-    Route::post('/destroy/{id}', [ArticleController::class, 'destroy']);
+  Route::get('/index/{id}', [ArticleController::class, 'index']);
+  Route::get('/aindex', [ArticleController::class, 'aindex'])->middleware('auth');
+  Route::get('/create', [ArticleController::class, 'create'])->middleware('auth');
+  Route::post('/store', [ArticleController::class, 'store']);
+  Route::get('/edit/{id}', [ArticleController::class, 'edit'])->middleware('auth');
+  Route::post('/update/{id}', [ArticleController::class, 'update']);
+  Route::post('/destroy/{id}', [ArticleController::class, 'destroy']);
 });
 
 Route::prefix('news')->group(function () {
-    Route::get('/index/{id}', [NewsController::class, 'index']);
-    Route::get('/aindex', [NewsController::class, 'aindex'])->middleware('auth');
-    Route::get('/create', [NewsController::class, 'create'])->middleware('auth');
-    Route::post('/store', [NewsController::class, 'store']);
-    Route::get('/edit/{id}', [NewsController::class, 'edit'])->middleware('auth');
-    Route::post('/update/{id}', [NewsController::class, 'update']);
-    Route::post('/destroy/{id}', [NewsController::class, 'destroy']);
+  Route::get('/index/{id}', [NewsController::class, 'index']);
+  Route::get('/aindex', [NewsController::class, 'aindex'])->middleware('auth');
+  Route::get('/create', [NewsController::class, 'create'])->middleware('auth');
+  Route::post('/store', [NewsController::class, 'store']);
+  Route::get('/edit/{id}', [NewsController::class, 'edit'])->middleware('auth');
+  Route::post('/update/{id}', [NewsController::class, 'update']);
+  Route::post('/destroy/{id}', [NewsController::class, 'destroy']);
 });
 
 Route::prefix('team')->group(function () {
-    Route::get('/index', [TeamController::class, 'index']);
+  Route::get('/index', [TeamController::class, 'index']);
 });
 
 Route::prefix('customers')->group(function () {
-    Route::get('/index', [CustomersController::class, 'index']);
-    Route::get('/aindex', [CustomersController::class, 'aindex'])->middleware('auth');
-    Route::get('/create', [CustomersController::class, 'create'])->middleware('auth');
-    Route::post('/store', [CustomersController::class, 'store']);
-    Route::post('/destroy/{id}', [CustomersController::class, 'destroy']);
+  Route::get('/index', [CustomersController::class, 'index']);
+  Route::get('/aindex', [CustomersController::class, 'aindex'])->middleware('auth');
+  Route::get('/create', [CustomersController::class, 'create'])->middleware('auth');
+  Route::post('/store', [CustomersController::class, 'store']);
+  Route::get('/edit/{id}', [CustomersController::class, 'edit'])->middleware('auth');
+  Route::post('/update/{id}', [CustomersController::class, 'update']);
+  Route::post('/destroy/{id}', [CustomersController::class, 'destroy']);
 });
 
 Route::prefix('blog')->group(function () {
-    Route::get('/index', [BlogController::class, 'index']);
+  Route::get('/index', [BlogController::class, 'index']);
 });
 
 Route::prefix('dashboard')->group(function () {
-    Route::get('/index', [AdminController::class, 'index'])->middleware('auth');
+  Route::get('/index', [AdminController::class, 'index'])->middleware('auth');
 });
