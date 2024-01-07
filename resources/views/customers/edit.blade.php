@@ -51,14 +51,22 @@
             </p>
           @enderror
         </div>
-        <div class="form-group mb-3">
+        <div class="form-group mb-3" id="financing-container">
           <label class="form-label">Financing</label>
-          <input type="text" class="form-control" name="financing" value="{{ $customers->financing }}">
+          @foreach (explode(',', $customers->financing) as $financing)
+            <div class="d-flex mb-1 financing-input-container">
+              <input type="text" class="form-control " name="financing[]" value="{{ $financing }}">
+              <button class="btn btn-danger btn-sm remove-financing-btn mx-2" type="button">x</button>
+            </div>
+          @endforeach
           @error('financing')
             <p class="text-danger">
               {{ $message }}
             </p>
           @enderror
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-primary btn-sm" id="add-financing-btn" type="button">+</button>
         </div>
         <div class="form-group mb-3">
           <label class="form-label" for="description">description</label>
@@ -74,4 +82,21 @@
       </form>
     </div>
   </div>
+
+  <script>
+    $("#add-financing-btn").click(() => $("#financing-container").append(financingInput()))
+
+    $(document).on("click", ".remove-financing-btn", function() {
+      $(this).closest(".financing-input-container").remove()
+    })
+
+    function financingInput() {
+      return `
+            <div class="d-flex mb-1 financing-input-container">
+              <input type="text" class="form-control " name="financing[]">
+              <button class="btn btn-danger btn-sm remove-financing-btn" type="button">Hapus</button>
+            </div>
+            `
+    }
+  </script>
 @endsection

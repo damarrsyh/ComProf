@@ -9,12 +9,15 @@
           <div class="col" data-aos="fade-in" data-aos-duration="1000">
             <div class="card h-100" style="background: var(--bs-gray-200);">
               <img src="{{ asset("storage/$customers->image") }}" class="card-img-top" alt="...">
+              <div class="text-on-image-left rounded p-1">{{ $customers->branch }}</div>
               <div class="card-body px-3">
                 <h4 class="card-title pb-2">{{ $customers->name }}</h4>
                 <ul class="list-group list-group-flush pb-3">
-                  <li class="list-group-item">{{ $customers->branch }}</li>
                   <li class="list-group-item">{{ $customers->business }}</li>
-                  <li class="list-group-item">{{ $customers->financing }}</li>
+                  @foreach (explode(',', $customers->financing) as $financing)
+                    <li class="list-group-item">Pembiayaan Ke {{ $loop->iteration }} : Rp. {{ $financing }}</li>
+                  @endforeach
+                  {{-- <li class="list-group-item">Rp. {{ $customers->financing }}</li> --}}
                 </ul>
                 <a href="/customers/indexd/{{ $customers->id }}" class="btn btn-primary">Read More</a>
               </div>
