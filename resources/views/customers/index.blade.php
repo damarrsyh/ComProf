@@ -19,7 +19,7 @@
                   @endforeach
                   {{-- <li class="list-group-item">Rp. {{ $customers->financing }}</li> --}}
                 </ul>
-                <a href="/customers/indexd/{{ $customers->id }}" class="btn btn-primary">Read More</a>
+                <a href="/customers/index/{{ $customers->id }}" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
