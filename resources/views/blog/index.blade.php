@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('pages')
-  <section class="page-section-article">
+  <section class="page-section-blog">
     <div class="container">
       <h2 class="textheader my-4 fw-bold rounded p-2" style="background: var(--bs-gray-200);">Our Article & News</h2>
       <div class="row">
