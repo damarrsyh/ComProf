@@ -52,6 +52,9 @@ class CustomersController extends Controller
       'description' => ['required']
     ]);
 
+    $customers_data['financing'] = join(",", $request->financing);
+
+
     if ($request->file('image')) {
       $customers_data['image'] = $request->file('image')->store('customers_image');
     }
@@ -78,6 +81,8 @@ class CustomersController extends Controller
       'financing' => ['required'],
       'description' => ['required'],
     ]);
+
+    $customers_data['financing'] = join(",", $request->financing);
 
     if ($request->file('image')) {
       if ($request->oldImage) {

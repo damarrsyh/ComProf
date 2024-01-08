@@ -35,7 +35,8 @@
               <td class="col-5">
                 {!! Str::limit($article->description, 400, '...') !!}</td>
               <td class="col-3">
-                <a href="/article/edit/{{ $article->id }}" class="btn btn-success mx-3">Edit</a>
+                <a href="/article/edit/{{ $article->id }}" class="btn btn-success my-2">Edit</a>
+                <br>
                 <form class="d-inline" action="/article/destroy/{{ $article->id }}" method="POST">
                   @csrf
                   <button class="btn btn-danger" onclick="return confirm('Delete This Article?')">Delete</button>

@@ -28,13 +28,13 @@
           @foreach ($headers as $key => $header)
             <tr>
               <th scope="row">{{ $loop->iteration }}</th>
-              <td>Gambar {{ $key + 1 }}</td>
-              <td><img src="{{ asset('storage/'. $header->image) }}" alt="" width="100px" height="60px"></td>
+              <td>Header {{ $key + 1 }}</td>
+              <td><img src="{{ asset('storage/' . $header->image) }}" alt="" width="150px"></td>
               <td>
-                <a href="/header/edit/{{ $header->id }}" class="btn btn-success mx-3">Edit</a>
+                <a href="/header/edit/{{ $header->id }}" class="btn btn-success mx-2">Edit</a>
                 <form class="d-inline" action="/header/destroy/{{ $header->id }}" method="POST">
-                    @csrf
-                    <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                  @csrf
+                  <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
                 </form>
               </td>
             </tr>
