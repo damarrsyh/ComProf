@@ -65,7 +65,7 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="assets/media/img/misi/1.jpg" style="border-radius: 15px" class="card-img-top" alt="..."
+              <img src="assets/media/img/misi/2.jpg" style="border-radius: 15px" class="card-img-top" alt="..."
                 data-aos="fade-in" data-aos-duration="1400">
               <div class="card-body">
                 <div class="row">
@@ -82,7 +82,7 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="assets/media/img/misi/1.jpg" style="border-radius: 15px" class="card-img-top" alt="..."
+              <img src="assets/media/img/misi/3.jpg" style="border-radius: 15px" class="card-img-top" alt="..."
                 data-aos="fade-in" data-aos-duration="1400">
               <div class="card-body">
                 <div class="row">

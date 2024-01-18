@@ -91,7 +91,7 @@
       return `
             <div class="d-flex mb-1 financing-input-container">
               <input type="text" class="form-control " name="financing[]">
-              <button class="btn btn-danger btn-sm remove-financing-btn" type="button">Hapus</button>
+              <button class="btn btn-danger btn-sm remove-financing-btn mx-2" type="button">x</button>
             </div>
             `
     }

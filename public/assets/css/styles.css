@@ -3312,15 +3312,15 @@ fieldset:disabled .btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: var(--bs-dark);
-  border-color: var(--bs-dark);
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: var(--bs-dark);
-  border-color: var(--bs-dark);
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
 
 .btn-check:checked+.btn-primary,

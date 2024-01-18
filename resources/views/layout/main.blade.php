@@ -161,13 +161,13 @@
                     <i class="fa-solid fa-location-dot fs-2"></i>
                     <span class="fw-bold fs-4 mx-2 p-2 rounded">Indramayu</span>
                     <br>
-                    <span class="subheading fs-5"></span>
+                    <span class="subheading fs-5">Perumahan Pring Gading Blok G2 Desa Sukamelang, Kec. Kroya</span>
                   </li>
                   <li class="my-5" style="list-style: none">
                     <i class="fa-solid fa-location-dot fs-2"></i>
                     <span class="fw-bold fs-4 mx-2 p-2 rounded">Jatirogo</span>
                     <br>
-                    <span class="subheading fs-5"></span>
+                    <span class="subheading fs-5">Perum Griya Mulya Regency Ds. Wotsogo Kec. Jatirogo Kab. Tuban</span>
                   </li>
                 </ul>
               </div>
@@ -197,7 +197,7 @@
                     <i class="fa-solid fa-location-dot fs-2"></i>
                     <span class="fw-bold fs-4 mx-2 p-2 rounded">Klaten</span>
                     <br>
-                    <span class="subheading fs-5">DK, Sewan 023/077, Mayungan, Ngawen, Klaten</span>
+                    <span class="subheading fs-5">Ds, Sewan 023/077, Mayungan, Ngawen, Klaten</span>
                   </li>
                   <li class="my-5" style="list-style: none">
                     <i class="fa-solid fa-location-dot fs-2"></i>
