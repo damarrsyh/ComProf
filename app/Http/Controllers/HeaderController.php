@@ -32,7 +32,7 @@ class HeaderController extends Controller
             $header_data['image'] = $request->file('image')->store('header_image');
         }
         Header::create($header_data);
-        return redirect('/header/index');
+        return redirect('/admin/header/index');
     }
 
 
@@ -51,21 +51,21 @@ class HeaderController extends Controller
         ]);
 
         if ($request->file('image')) {
-            if($request->oldImage) {
+            if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
             $header_data['image'] = $request->file('image')->store('header_image');
         }
         Header::where('id', $id)->update($header_data);
-        return redirect('/header/index');
+        return redirect('/admin/header/index');
     }
 
     public function destroy(Request $request)
     {
-        if($request->image) {
+        if ($request->image) {
             Storage::delete($request->image);
         }
         Header::destroy($request->id);
-        return redirect('/header/index');
+        return redirect('/admin/header/index');
     }
 }

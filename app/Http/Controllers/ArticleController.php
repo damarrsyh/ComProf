@@ -54,7 +54,7 @@ class ArticleController extends Controller
       $article_data['image'] = $request->file('image')->store('article_image');
     }
     Article::create($article_data);
-    return redirect('/article/aindex');
+    return redirect('/admin/article/aindex');
   }
 
   public function edit($id)
@@ -82,7 +82,7 @@ class ArticleController extends Controller
       $article_data['image'] = $request->file('image')->store('article_image');
     }
     Article::where('id', $id)->update($article_data);
-    return redirect('/article/aindex');
+    return redirect('/admin/article/aindex');
   }
 
   public function destroy(Request $request)
@@ -91,6 +91,6 @@ class ArticleController extends Controller
       Storage::delete($request->image);
     }
     Article::destroy($request->id);
-    return redirect('/article/aindex');
+    return redirect('/admin/article/aindex');
   }
 }

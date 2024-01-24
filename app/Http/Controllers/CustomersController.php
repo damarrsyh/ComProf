@@ -59,7 +59,7 @@ class CustomersController extends Controller
       $customers_data['image'] = $request->file('image')->store('customers_image');
     }
     Customers::create($customers_data);
-    return redirect('/customers/aindex');
+    return redirect('/admin/customers/aindex');
   }
 
   public function edit($id)
@@ -91,7 +91,7 @@ class CustomersController extends Controller
       $customers_data['image'] = $request->file('image')->store('customers_image');
     }
     Customers::where('id', $id)->update($customers_data);
-    return redirect('/customers/aindex');
+    return redirect('/admin/customers/aindex');
   }
 
   public function destroy(Request $request)
@@ -100,6 +100,6 @@ class CustomersController extends Controller
       Storage::delete($request->image);
     }
     Customers::destroy($request->id);
-    return redirect('/customers/aindex');
+    return redirect('/admin/customers/aindex');
   }
 }

@@ -10,7 +10,7 @@
         <i class="fa-solid fa-caret-left"></i>
       </div>
     </a>
-    <a href="/header/create" class="btn btn-primary mx-3">Add New</a>
+    <a href="/admin/header/create" class="btn btn-primary mx-3">Add New</a>
   </div>
 
   <div class="row">
@@ -31,8 +31,8 @@
               <td>Header {{ $key + 1 }}</td>
               <td><img src="{{ asset('storage/' . $header->image) }}" alt="" width="150px"></td>
               <td>
-                <a href="/header/edit/{{ $header->id }}" class="btn btn-success mx-2">Edit</a>
-                <form class="d-inline" action="/header/destroy/{{ $header->id }}" method="POST">
+                <a href="/admin/header/edit/{{ $header->id }}" class="btn btn-success mx-2">Edit</a>
+                <form class="d-inline" action="/admin/header/destroy/{{ $header->id }}" method="POST">
                   @csrf
                   <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
                 </form>

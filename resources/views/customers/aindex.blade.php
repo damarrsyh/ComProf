@@ -10,7 +10,7 @@
         <i class="fa-solid fa-caret-left"></i>
       </div>
     </a>
-    <a href="/customers/create" class="btn btn-primary mx-3">Add New</a>
+    <a href="/admin/customers/create" class="btn btn-primary mx-3">Add New</a>
   </div>
 
   <div class="row">
@@ -44,9 +44,9 @@
               <td class="col-3">
                 {!! Str::limit($customers->description, 400, '...') !!}</td>
               <td class="col-1">
-                <a href="/customers/edit/{{ $customers->id }}" class="btn btn-success my-2">Edit</a>
+                <a href="/admin/customers/edit/{{ $customers->id }}" class="btn btn-success my-2">Edit</a>
                 <br>
-                <form class="d-inline" action="/customers/destroy/{{ $customers->id }}" method="POST">
+                <form class="d-inline" action="/admin/customers/destroy/{{ $customers->id }}" method="POST">
                   @csrf
                   <button class="btn btn-danger" onclick="return confirm('Delete This Customers?')">Delete</button>
                 </form>

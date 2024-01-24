@@ -19,53 +19,28 @@
                   @endforeach
                   {{-- <li class="list-group-item">Rp. {{ $customers->financing }}</li> --}}
                 </ul>
-                <a href="/customers/index/{{ $customers->id }}" class="btn btn-primary">Read More</a>
+                <a href="/customers/index/{{ $customers->id }}" data-bs-toggle="modal"
+                  data-bs-target="#Modal1 {{ $customers->id }}" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
         @endforeach
-        {{-- <div class="col rounded" data-aos="fade-in" data-aos-duration="1000">
-          <div class="card h-100" style="background: var(--bs-gray-200);">
-            <img src="/assets/media/img/portfolio/fullsize/1.jpg" class="card-img-top" alt="...">
-            <div class="card-body px-3">
-              <h4 class="card-title pb-2">Nama Anggota</h4>
-              <ul class="list-group list-group-flush pb-3">
-                <li class="list-group-item">Anggota Cabang</li>
-                <li class="list-group-item">Usaha Anggota</li>
-                <li class="list-group-item">Pembiayaan Anggota</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Modal1 {{ $customers->id }}" tabindex="-1" aria-labelledby="ModalLabel1"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-light" id="ModalLabel1 {{ $customers->id }}">Pembiayaan Sistem Grameen Bank</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>{!! $customers->description !!}</p>
+          </div>
+          <div class="modal-footer">
           </div>
         </div>
-        <div class="col rounded" data-aos="fade-in" data-aos-duration="1000">
-          <div class="card h-100" style="background: var(--bs-gray-200);">
-            <img src="/assets/media/img/portfolio/fullsize/1.jpg" class="card-img-top" alt="...">
-            <div class="card-body px-3">
-              <h4 class="card-title pb-2">Nama Anggota</h4>
-              <ul class="list-group list-group-flush pb-3">
-                <li class="list-group-item">Anggota Cabang</li>
-                <li class="list-group-item">Usaha Anggota</li>
-                <li class="list-group-item">Pembiayaan Anggota</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col rounded" data-aos="fade-in" data-aos-duration="1000">
-          <div class="card h-100" style="background: var(--bs-gray-200);">
-            <img src="/assets/media/img/portfolio/fullsize/1.jpg" class="card-img-top" alt="...">
-            <div class="card-body px-3">
-              <h4 class="card-title pb-2">Nama Anggota</h4>
-              <ul class="list-group list-group-flush pb-3">
-                <li class="list-group-item">Anggota Cabang</li>
-                <li class="list-group-item">Usaha Anggota</li>
-                <li class="list-group-item">Pembiayaan Anggota</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div> --}}
       </div>
     </div>
   </section>

@@ -12,7 +12,7 @@ class SummaryController extends Controller
         $summary = Summary::all();
         return view('summary.index', compact(['summary']));
     }
-    
+
     public function edit($id)
     {
         return view('summary.edit', [
@@ -29,6 +29,6 @@ class SummaryController extends Controller
 
         Summary::where('id', $id)->update($data_sum);
 
-        return redirect('/summary/index');
+        return redirect('/admin/summary/index');
     }
 }

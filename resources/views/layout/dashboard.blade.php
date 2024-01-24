@@ -70,49 +70,49 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="/dashboard/index">
+        <a class="nav-link" href="/admin/dashboard/index">
           <i class="fa-solid fa-house"></i>
           <span>Dashboard</span></a>
       </li>
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="/header/index">
+        <a class="nav-link" href="/admin/header/index">
           <i class="fas fa-fw fa-table"></i>
           <span>Header</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="/summary/index">
+        <a class="nav-link" href="/admin/summary/index">
           <i class="fas fa-fw fa-table"></i>
           <span>Summary</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="/gallery/index">
+        <a class="nav-link" href="/admin/gallery/index">
           <i class="fas fa-fw fa-table"></i>
           <span>Gallery</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="/article/aindex">
+        <a class="nav-link" href="/admin/article/aindex">
           <i class="fas fa-fw fa-table"></i>
           <span>Article</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="/news/aindex">
+        <a class="nav-link" href="/admin/news/aindex">
           <i class="fas fa-fw fa-table"></i>
           <span>News</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="/customers/aindex">
+        <a class="nav-link" href="/admin/customers/aindex">
           <i class="fas fa-fw fa-table"></i>
           <span>Customers</span></a>
       </li>

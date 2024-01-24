@@ -22,7 +22,7 @@ class GalleryController extends Controller
 
         return back();
     }
-    
+
     public function store(Request $request)
     {
         $gallery_data = $request->validate([
@@ -35,13 +35,13 @@ class GalleryController extends Controller
             $gallery_data['image'] = $request->file('image')->store('gallery_image');
         }
         Gallery::create($gallery_data);
-        return redirect('/gallery/index');
+        return redirect('/admin/gallery/index');
     }
 
     public function edit($id)
     {
         return view('gallery.edit', [
-            
+
             'title' => 'Gallery',
             'gallery' => Gallery::where('id', $id)->first()
         ]);
@@ -56,21 +56,21 @@ class GalleryController extends Controller
         ]);
 
         if ($request->file('image')) {
-            if($request->oldImage) {
+            if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
             $gallery_data['image'] = $request->file('image')->store('gallery_image');
         }
         Gallery::where('id', $id)->update($gallery_data);
-        return redirect('/gallery/index');
+        return redirect('/admin/gallery/index');
     }
 
     public function destroy(Request $request)
     {
-        if($request->image) {
+        if ($request->image) {
             Storage::delete($request->image);
         }
         Gallery::destroy($request->id);
-        return redirect('/gallery/index');
+        return redirect('/admin/gallery/index');
     }
 }

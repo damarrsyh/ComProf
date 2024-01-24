@@ -52,14 +52,13 @@ class AuthController extends Controller
       session([
         'role' => $user->role
       ]);
-      
+
       $request->session()->regenerate();
-      
+
       if ($user->role == "admin") {
-        return redirect('dashboard/index');
+        return redirect('admin/dashboard/index');
       } else {
         return redirect('/');
-
       }
     }
 

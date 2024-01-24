@@ -10,7 +10,7 @@
         <i class="fa-solid fa-caret-left"></i>
       </div>
     </a>
-    <a href="/news/create" class="btn btn-primary mx-3">Add New</a>
+    <a href="/admin/news/create" class="btn btn-primary mx-3">Add New</a>
   </div>
 
   <div class="row">
@@ -35,9 +35,9 @@
               <td class="col-5">
                 {!! Str::limit($news->description, 300, '...') !!}</td>
               <td class="col-3">
-                <a href="/news/edit/{{ $news->id }}" class="btn btn-success my-2">Edit</a>
+                <a href="/admin/news/edit/{{ $news->id }}" class="btn btn-success my-2">Edit</a>
                 <br>
-                <form class="d-inline" action="/news/destroy/{{ $news->id }}" method="POST">
+                <form class="d-inline" action="/admin/news/destroy/{{ $news->id }}" method="POST">
                   @csrf
                   <button class="btn btn-danger" onclick="return confirm('Delete This News?')">Delete</button>
                 </form>
