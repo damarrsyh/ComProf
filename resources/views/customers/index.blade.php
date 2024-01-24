@@ -10,7 +10,7 @@
             <div class="card h-100" style="background: var(--bs-gray-200);">
               <img src="{{ asset("storage/$customers->image") }}" class="card-img-top" alt="...">
               <div class="text-on-image-left rounded p-1">{{ $customers->branch }}</div>
-              <div class="card-body px-3">
+              <div class="card-body hov px-3">
                 <h4 class="card-title pb-2">{{ $customers->name }}</h4>
                 <ul class="list-group list-group-flush pb-3">
                   <li class="list-group-item">{{ $customers->business }}</li>
@@ -19,29 +19,30 @@
                   @endforeach
                   {{-- <li class="list-group-item">Rp. {{ $customers->financing }}</li> --}}
                 </ul>
-                <a href="/customers/index/{{ $customers->id }}" data-bs-toggle="modal"
-                  data-bs-target="#Modal1 {{ $customers->id }}" class="btn btn-primary">Read More</a>
+                <a href="/customers/index/{{ $customers->id }}" class="btn btn-primary hov-1 text-white"
+                  data-bs-toggle="modal" data-bs-target="#Modal1">Read More</a>
               </div>
             </div>
           </div>
         @endforeach
       </div>
     </div>
-    <div class="modal fade" id="Modal1 {{ $customers->id }}" tabindex="-1" aria-labelledby="ModalLabel1"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-light" id="ModalLabel1 {{ $customers->id }}">Pembiayaan Sistem Grameen Bank</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>{!! $customers->description !!}</p>
-          </div>
-          <div class="modal-footer">
-          </div>
+  </section>
+
+  <!--MODAL-->
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-light" id="ModalLabel1">{{ $customers->name }} - {{ $customers->branch }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>{!! $customers->description !!}</p>
+        </div>
+        <div class="modal-footer">
         </div>
       </div>
     </div>
-  </section>
+  </div>
 @endsection

@@ -22,9 +22,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::create([
-            'username' => 'Admin',
-            'email' => 'admin@gmail.com',
-            'password' => bcrypt('admin'),
+            'username' => 'Admin Company Profile',
+            'email' => 'admincompany@gmail.com',
+            'password' => bcrypt('admincompanyprofile'),
             'role' => 'admin'
         ]);
         User::create([
@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Cabang',
             'jumlah' => '12',
             'image' => 'summary/3.png',
-            
+
         ]);
         Summary::create([
             'nama' => 'Anggota',

@@ -160,13 +160,13 @@
                   <i class="fa-solid fa-location-dot fs-2"></i>
                   <span class="fw-bold fs-4 mx-2 p-2 rounded">Indramayu</span>
                   <br>
-                  <span class="subheading fs-5"></span>
+                  <span class="subheading fs-5">Perumahan Pring Gading Blok G2 Desa Sukamelang, Kec. Kroya</span>
                 </li>
                 <li class="my-5" style="list-style: none">
                   <i class="fa-solid fa-location-dot fs-2"></i>
                   <span class="fw-bold fs-4 mx-2 p-2 rounded">Jatirogo</span>
                   <br>
-                  <span class="subheading fs-5"></span>
+                  <span class="subheading fs-5">Perum Griya Mulya Regency Ds. Wotsogo Kec. Jatirogo Kab. Tuban</span>
                 </li>
               </ul>
             </div>
@@ -196,7 +196,7 @@
                   <i class="fa-solid fa-location-dot fs-2"></i>
                   <span class="fw-bold fs-4 mx-2 p-2 rounded">Klaten</span>
                   <br>
-                  <span class="subheading fs-5">DK, Sewan 023/077, Mayungan, Ngawen, Klaten</span>
+                  <span class="subheading fs-5">Ds, Sewan 023/077, Mayungan, Ngawen, Klaten</span>
                 </li>
                 <li class="my-5" style="list-style: none">
                   <i class="fa-solid fa-location-dot fs-2"></i>
@@ -232,7 +232,6 @@
   <!-- SimpleLightbox plugin JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
 
-
   <!-- Slick -->
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
@@ -258,19 +257,6 @@
     const changeBackground = () => {
       $('.change-background').click()
     }
-  </script>
-
-  <script>
-    $('.button').click(function() {
-      var buttonId = $(this).attr('id');
-      $('#modal-container').removeAttr('class').addClass(buttonId);
-      $('body').addClass('modal-active');
-    })
-
-    $('#modal-container').click(function() {
-      $(this).addClass('out');
-      $('body').removeClass('modal-active');
-    });
   </script>
 </body>
 
