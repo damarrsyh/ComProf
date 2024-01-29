@@ -14,10 +14,11 @@ class BlogController extends Controller
     public function index()
     {
         return view('blog.index', [
-        'headers' => Header::all(),
-        'summaries' => Summary::all(),
-        'galleries' => Gallery::all(),
-        'article' => Article::all(),
-        'news' => News::all(), ]);
+            'headers' => Header::all(),
+            'summaries' => Summary::all(),
+            'galleries' => Gallery::all(),
+            'article' => Article::all(),
+            'news' => News::all(),
+        ]);
     }
 }

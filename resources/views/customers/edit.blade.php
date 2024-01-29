@@ -3,7 +3,7 @@
 @section('page')
   <div class="d-sm-flex align-items-center mb-4">
     <h1 class="h3 mb-0 mr-3 text-gray-800">Edit Customers Page</h1>
-    <a type="button" class="btn btn-primary" href="/customers/aindex">
+    <a type="button" class="btn btn-primary" href="/admin/customers/aindex">
       <div class="wrapper">
         <i class="fa-solid fa-caret-left"></i>
       </div>
@@ -11,7 +11,7 @@
   </div>
   <div class="row">
     <div class="col-6">
-      <form action="/customers/update/{{ $customers->id }}" method="POST" enctype="multipart/form-data">
+      <form action="/admin/customers/update/{{ $customers->id }}" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="" class="form-label">Image</label>
         <input type="hidden" name="oldImage" value="{{ $customers->image }}">

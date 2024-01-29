@@ -4,12 +4,6 @@
   <!-- Page Heading -->
   <div class="d-sm-flex align-items-center mb-4">
     <h1 class="h3 mb-0 mr-3 text-gray-800">Customize Summary Page</h1>
-
-    <a type="button" class="btn btn-primary" href="/admin/dashboard/index">
-      <div class="wrapper">
-        <i class="fa-solid fa-caret-left"></i>
-      </div>
-    </a>
   </div>
 
   <div class="row">

@@ -11,7 +11,7 @@
   </div>
   <div class="row">
     <div class="col-6">
-      <form action="/gallery/store" method="POST" enctype="multipart/form-data">
+      <form action="/admin/gallery/store" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="" class="form-label">Image</label>
         <div class="custom-file mb-3">

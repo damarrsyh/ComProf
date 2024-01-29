@@ -15,10 +15,10 @@
                 <div class="col-md-8">
                   <div class="card-body ">
                     <h3 class="card-title">{{ $article->title }}</h3>
-                    <p class="card-text">{{ Str::limit($article->preview_description) }}</p>
+                    <p class="card-text">{!! Str::limit($article->perview_description) !!}</p>
                     <a type="button" class="btn btn-primary" href="/article/index/{{ $article->id }}">
                       <div class="wrapper">
-                        <span>More</span>
+                        <span>Baca selengkapnya<i class="fa-solid fa-arrow-right mx-2"></i></span>
                       </div>
                     </a>
                   </div>
@@ -38,7 +38,7 @@
                     <p class="card-text">{!! Str::limit($news->description) !!}</p>
                     <a type="button" class="btn btn-primary" href="/news/index/{{ $news->id }}">
                       <div class="wrapper">
-                        <span>More</span>
+                        <span>Baca Selengkapnya<i class="fa-solid fa-arrow-right mx-2"></i></span>
                       </div>
                     </a>
                   </div>
