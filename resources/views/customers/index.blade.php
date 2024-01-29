@@ -19,8 +19,8 @@
                   @endforeach
                   {{-- <li class="list-group-item">Rp. {{ $customers->financing }}</li> --}}
                 </ul>
-                <a href="/customers/index/{{ $customers->id }}" class="btn btn-primary hov-1 text-white"
-                  data-bs-toggle="modal" data-bs-target="#Modal1">Read More</a>
+                <a class="btn btn-primary hov-1 text-white" data-bs-toggle="modal"
+                  data-bs-target="{{ $customers->id }}">Read More</a>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@
   </section>
 
   <!--MODAL-->
-  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+  <div class="modal fade" id="{{ $customers->id }}" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">

@@ -3,8 +3,9 @@
   <!--Section Article-->
   <section class="page-section">
     <div class="container my-5" id="services">
+      <h2 class="textheader my-4 fw-bold rounded p-2" style="background: var(--bs-gray-200);">Our Article & News</h2>
       <div class="row">
-        <div class="col-md-8 align-self-center" style="border-radius: 15px; background: var(--bs-gray-100);">
+        <div class="col-md-8" style="border-radius: 15px; background: var(--bs-gray-100);">
           <div class="card mx-5 my-5">
             <div class="card-header">
               <a href="/blog/index" class="btn btn-primary mb-3 float-end">Back</a>
