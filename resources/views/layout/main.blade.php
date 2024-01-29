@@ -109,10 +109,6 @@
                     <i class="fa-regular fa-calendar-days mx-2 fs-2"></i>
                     <span class="fs-5 mx-3">Senin - Jumat</span>
                   </li>
-                </ul>
-              </div>
-              <div class="col">
-                <ul class="text-white">
                   <li class="my-4" style="list-style: none">
                     <i class="fa-solid fa-clock mx-2 fs-2"></i>
                     <span class="fs-5 mx-3">08:00 WIB - 16:00 WIB</span>
