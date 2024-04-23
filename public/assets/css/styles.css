@@ -13497,3 +13497,28 @@ section {
     transform: scale(0);
   }
 }
+
+.overlay {
+      position: relative;
+      display: inline-block;
+}
+.overlay .overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ubah opacity sesuai kebutuhan */
+  color: white;
+  padding: 20px;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
