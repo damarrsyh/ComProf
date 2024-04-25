@@ -1,5 +1,11 @@
-<section class="page-section" id="services">
-  <div class="container" data-aos="fade-in" data-aos-duration="1000">
+<section class="page-section position-relative" id="services">
+
+  <div class="container position-relative" data-aos="fade-in" data-aos-duration="1000">
+    <div class="custom-shape-divider-bottom-1714016421">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+      </svg>
+    </div>
     <div class="row">
       <div class="col-md-4" style="background: var(--bs-gray-200); border-radius: 15px 0px 0px 15px;">
         <div class="overlay">
