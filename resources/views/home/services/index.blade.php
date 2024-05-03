@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-md-4" style="background: var(--bs-gray-200); border-radius: 15px 0px 0px 15px;">
         <div class="overlay">
-          <img src="/assets/media/img/mum/services.jpeg" class="img-fluid" alt="Gambar"
+          <img src="/assets/media/img/services/services.jpeg" class="img-fluid" alt="Gambar"
             style="border-radius: 15px 0px 0px 15px;">
         </div>
       </div>
