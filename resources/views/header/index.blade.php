@@ -4,7 +4,7 @@
   <!-- Page Heading -->
   <div class="d-sm-flex align-items-center mb-4">
     <h1 class="h3 mb-0 mr-3 text-gray-800">Customize Header Page</h1>
-    <a href="/admin/header/create" class="btn btn-primary mx-3">Add New</a>
+    <a href="/admin/header/create" class="btn btn-success mx-3">Add New</a>
   </div>
 
   <div class="row">
@@ -25,7 +25,7 @@
               <td>Header {{ $key + 1 }}</td>
               <td><img src="{{ asset('storage/' . $header->image) }}" alt="" width="150px"></td>
               <td>
-                <a href="/admin/header/edit/{{ $header->id }}" class="btn btn-success mx-2">Edit</a>
+                <a href="/admin/header/edit/{{ $header->id }}" class="btn btn-warning mx-2">Edit</a>
                 <form class="d-inline" action="/admin/header/destroy/{{ $header->id }}" method="POST">
                   @csrf
                   <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>

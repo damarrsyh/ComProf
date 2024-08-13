@@ -10,7 +10,10 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\SummaryController;
+use App\Http\Controllers\ChartmController;
+use App\Http\Controllers\ChartyController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\TeamController;
 
@@ -58,6 +61,10 @@ Route::prefix('blog')->group(function () {
   Route::get('/index', [BlogController::class, 'index']);
 });
 
+Route::prefix('faq')->group(function () {
+  Route::get('/index', [FaqController::class, 'index']);
+});
+
 
 Route::prefix("admin")->group(function () {
   // index => tombol new, tombol edit, tombol delete
@@ -85,6 +92,24 @@ Route::prefix("admin")->group(function () {
     Route::post('/store', [SummaryController::class, 'store']);
     Route::get('/edit/{id}', [SummaryController::class, 'edit'])->middleware('auth');
     Route::post('/update/{id}', [SummaryController::class, 'update']);
+  });
+
+  Route::prefix('chartm')->group(function () {
+    Route::get('/index', [ChartmController::class, 'index'])->middleware('auth');
+    Route::get('/create', [ChartmController::class, 'create'])->middleware('auth');
+    Route::post('/store', [ChartmController::class, 'store']);
+    Route::get('/edit/{id}', [ChartmController::class, 'edit'])->middleware('auth');
+    Route::post('/update/{id}', [ChartmController::class, 'update']);
+    Route::post('/destroy/{id}', [ChartmController::class, 'destroy']);
+  });
+
+  Route::prefix('charty')->group(function () {
+    Route::get('/index', [ChartyController::class, 'index'])->middleware('auth');
+    Route::get('/create', [ChartyController::class, 'create'])->middleware('auth');
+    Route::post('/store', [ChartyController::class, 'store']);
+    Route::get('/edit/{id}', [ChartyController::class, 'edit'])->middleware('auth');
+    Route::post('/update/{id}', [ChartyController::class, 'update']);
+    Route::post('/destroy/{id}', [ChartyController::class, 'destroy']);
   });
 
   Route::prefix('gallery')->group(function () {
@@ -121,5 +146,14 @@ Route::prefix("admin")->group(function () {
     Route::get('/edit/{id}', [CustomersController::class, 'edit'])->middleware('auth');
     Route::post('/update/{id}', [CustomersController::class, 'update']);
     Route::post('/destroy/{id}', [CustomersController::class, 'destroy']);
+  });
+
+  Route::prefix('faq')->group(function () {
+    Route::get('/aindex', [FaqController::class, 'aindex'])->middleware('auth');
+    Route::get('/create', [FaqController::class, 'create'])->middleware('auth');
+    Route::post('/store', [FaqController::class, 'store']);
+    Route::get('/edit/{id}', [FaqController::class, 'edit'])->middleware('auth');
+    Route::post('/update/{id}', [FaqController::class, 'update']);
+    Route::post('/destroy/{id}', [FaqController::class, 'destroy']);
   });
 });

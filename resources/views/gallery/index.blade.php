@@ -4,7 +4,7 @@
   <!-- Page Heading -->
   <div class="d-sm-flex align-items-center mb-4">
     <h1 class="h3 mb-0 mr-3 text-gray-800">Customize Gallery Page</h1>
-    <a href="/admin/gallery/create" class="btn btn-primary mx-3">Add New</a>
+    <a href="/admin/gallery/create" class="btn btn-success mx-3">Add New</a>
   </div>
 
   <div class="row">
@@ -27,7 +27,7 @@
               <td>{{ $gallery->title }}</td>
               <td>{{ $gallery->description }}</td>
               <td>
-                <a href="/admin/gallery/edit/{{ $gallery->id }}" class="btn btn-success mx-3">Edit</a>
+                <a href="/admin/gallery/edit/{{ $gallery->id }}" class="btn btn-warning mx-3">Edit</a>
                 <form class="d-inline" action="/admin/gallery/destroy/{{ $gallery->id }}" method="POST">
                   @csrf
                   <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>

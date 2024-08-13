@@ -4,7 +4,7 @@
   <!-- Page Heading -->
   <div class="d-sm-flex align-items-center mb-4">
     <h1 class="h3 mb-0 mr-3 text-gray-800">Customize Article Page</h1>
-    <a href="/admin/article/create" class="btn btn-primary mx-3">Add New</a>
+    <a href="/admin/article/create" class="btn btn-success mx-3">Add New</a>
   </div>
 
   <div class="row">
@@ -29,7 +29,7 @@
               <td class="col-5">
                 {!! Str::limit($article->description, 400, '...') !!}</td>
               <td class="col-3">
-                <a href="/admin/article/edit/{{ $article->id }}" class="btn btn-success my-2">Edit</a>
+                <a href="/admin/article/edit/{{ $article->id }}" class="btn btn-warning my-2">Edit</a>
                 <br>
                 <form class="d-inline" action="/admin/article/destroy/{{ $article->id }}" method="POST">
                   @csrf

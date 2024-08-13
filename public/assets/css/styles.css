@@ -78,6 +78,10 @@
 }
 
 body {
+  background-image: url(/assets/media/img/bgall.jpg); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -5380,7 +5384,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #dc5834;
+  color: #a52d2d;
   background-color: #feefeb;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
@@ -5414,9 +5418,9 @@ fieldset:disabled .btn {
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #fab19d;
+  border-color: #fa9d9d;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(244, 58, 58, 0.25);
 }
 
 .accordion-header {
@@ -12276,11 +12280,16 @@ body {
 }
 
 .page-section-header {
-  padding: 7rem 0 0 0;
+  padding: 5rem 0 0 0;
   background-color: transparent;
 }
 
 .page-section-blog {
+  padding: 7rem 0 0 0;
+  background-color: transparent;
+}
+
+.page-section-team {
   padding: 7rem 0 0 0;
   background-color: transparent;
 }
@@ -12302,7 +12311,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: var(--bs-primary);
+  background-color: var(--bs-secondary);
   opacity: 1;
 }
 
@@ -12550,6 +12559,9 @@ header.masthead .h1 {
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
+  /* border-radius: 15px;  */
+  background-color: rgba(233, 236, 239, 0.3); 
+  color: white;
 }
 
 .timeline>li .timeline-panel:before {
@@ -12559,17 +12571,17 @@ header.masthead .h1 {
 }
 
 .timeline>li .timeline-panel:after {
-  left: -14px;
-  border-right-width: 14px;
+  left: -15px;
+  border-right-width: 15px;
   border-left-width: 0;
 }
 
 .timeline>li .timeline-image {
   position: absolute;
-  z-index: 100;
+  z-index: 0;
   left: 0;
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   margin-left: 0;
   text-align: center;
   color: white;
@@ -12604,7 +12616,7 @@ header.masthead .h1 {
 
 .timeline .timeline-heading h4,
 .timeline .timeline-heading .h4 {
-  margin-top: 0;
+  margin-top: 10px;
   color: inherit;
 }
 
@@ -12631,7 +12643,7 @@ header.masthead .h1 {
 
   .timeline>li .timeline-panel {
     float: left;
-    width: 90%;
+    width: 97%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
@@ -12646,7 +12658,7 @@ header.masthead .h1 {
   .timeline>li .timeline-image .h4 {
     font-size: 13px;
     line-height: 18px;
-    margin-top: 16px;
+    margin-top: 14px;
   }
 
   .timeline>li.timeline-inverted {
@@ -12673,16 +12685,16 @@ header.masthead .h1 {
   }
 
   .timeline>li .timeline-image {
-    width: 150px;
-    height: 150px;
-    left: -75px;
+    width: 160px;
+    height: 160px;
+    left: -83px;
   }
 
   .timeline>li .timeline-image h4,
   .timeline>li .timeline-image .h4 {
     font-size: 18px;
     line-height: 26px;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   .timeline>li.timeline-inverted>.timeline-panel {
@@ -12766,7 +12778,6 @@ section {
 
 .hov-1 {
   transition: transform .75s;
-  color: var(--bs-dark);
 }
 
 .hov:hover .hov-1 {
@@ -13603,4 +13614,13 @@ section {
 
 .custom-shape-divider-bottom-1714016421 .shape-fill {
     fill: #FFFFFF;
+}
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bd-violet-bg);
+  --bs-popover-header-bg: var(--bd-violet-bg);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
 }
