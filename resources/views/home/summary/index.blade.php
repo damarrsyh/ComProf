@@ -14,8 +14,8 @@
             <img src="/assets/media/img/{{ $summary->image }}" alt="" width="100px">
           </div>
           <hr class="divider">
-          <h4 class="mb-2 fw-bold  text-white">{{ $summary->jumlah }}</h3>
-            <h3 class="mb-2 fw-bold  text-white">{{ $summary->nama }}</h3>
+          <h4 class="mb-2 fw-bold text-primary">{{ $summary->jumlah }}</h3>
+            <h3 class="mb-2 fw-bold text-primary">{{ $summary->nama }}</h3>
         </div>
         {{-- <div class="custom-shape-divider-bottom-1714016193">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

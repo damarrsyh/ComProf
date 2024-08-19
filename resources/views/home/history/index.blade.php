@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row gx-4 gx-lg-5 py-5 justify-content-center" data-aos="fade-in" data-aos-duration="1000">
       <div class="col pb-5">
-        <div class="text-center py-5 rounded" style="background: rgba(233, 236, 239); margin: 0 0 20px 0;">
+        <div class="text-center py-5 shadow rounded" style="background: rgba(233, 236, 239); margin: 0 0 20px 0;">
           <h1 class="section-heading textheader fw-bold">MILESTONES</h1>
         </div>
         <ul class="timeline">
@@ -13,7 +13,7 @@
                 Awal
               </h4>
             </div>
-            <div class="timeline-panel rounded">
+            <div class="timeline-panel shadow rounded">
               <div class="timeline-heading text-center">
                 <h4>Awal Pembentukan</h4>
                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -34,7 +34,7 @@
                 MUM
               </h4>
             </div>
-            <div class="timeline-panel rounded">
+            <div class="timeline-panel shadow rounded">
               <div class="timeline-heading text-center">
                 <h4>Lokasi</h4>
                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -57,7 +57,7 @@
                 Lembaga
               </h4>
             </div>
-            <div class="timeline-panel rounded">
+            <div class="timeline-panel shadow rounded">
               <div class="timeline-heading text-center">
                 <h4>Lembaga Otonom</h4>
                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -77,7 +77,7 @@
                 Evaluasi
               </h4>
             </div>
-            <div class="timeline-panel rounded">
+            <div class="timeline-panel shadow rounded">
               <div class="timeline-heading text-center">
                 <h4>Evaluasi</h4>
                 <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -98,7 +98,7 @@
                 Cabang
               </h4>
             </div>
-            <div class="timeline-panel rounded">
+            <div class="timeline-panel shadow rounded">
               <div class="timeline-heading text-center">
                 <h4>Cabang</h4>
                 <h4 class="subheading">Mitra Usaha Mandiri</h4>

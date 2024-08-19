@@ -6,7 +6,7 @@
         <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
       </svg>
     </div> --}}
-    <div class="row text-white shadow rounded">
+    <div class="row text-primary shadow rounded">
       <div class="col-md-4 rounded" style="background: var(--bs-gray-200);">
         <div class="overlay">
           <img src="/assets/media/img/services/services.png" class="img-fluid rounded" alt="Gambar">

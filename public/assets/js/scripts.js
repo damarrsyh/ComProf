@@ -60,4 +60,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const popoverList = [...popoverTriggerList].map(
         (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
     );
+
+    const logo = document.querySelector(".logo").cloneNode(true);
+
+    document.querySelector(".logo-container").appendChild(logo);
 });

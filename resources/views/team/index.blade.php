@@ -1,78 +1,143 @@
 @extends('layout.main')
 
 @section('pages')
-  <section class="page-section-team">
+  <section class="site-section border-bottom" id="team-section">
     <div class="container">
-      <h2 class="textheader my-4 fw-bold rounded p-2" style="background: var(--bs-gray-200);">Our Team</h2>
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Team</h2>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minus minima neque tempora reiciendis.</p>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-6" data-aos="fade-in" data-aos-duration="1000">
-          <div class="card bg-light rounded-3 mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="\assets\media\img\team\1.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body px-3">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+            <figure>
+              <ul class="social">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+              <img src="/assets/media/img/team/person_6.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <div class="p-3">
+              <h3>Dave Simpson</h3>
+              <span class="position">Product Manager</span>
             </div>
           </div>
         </div>
-        <div class="col-6" data-aos="fade-in" data-aos-duration="1000">
-          <div class="card bg-light rounded-3 mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="\assets\media\img\team\1.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body px-3">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member">
+            <figure>
+              <ul class="social">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+              <img src="/assets/media/img/team/person_7.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <div class="p-3">
+              <h3>Ben Thompson</h3>
+              <span class="position">Product Manager</span>
             </div>
           </div>
         </div>
-        <div class="col-6" data-aos="fade-in" data-aos-duration="1000">
-          <div class="card bg-light rounded-3 mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="\assets\media\img\team\1.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body px-3">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member">
+            <figure>
+              <ul class="social">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+              <img src="/assets/media/img/team/person_8.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <div class="p-3">
+              <h3>Kyla Stewart</h3>
+              <span class="position">Product Manager</span>
             </div>
           </div>
         </div>
-        <div class="col-6" data-aos="fade-in" data-aos-duration="1000">
-          <div class="card bg-light rounded-3 mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="\assets\media\img\team\1.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body px-3">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
+
+        <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
+          <div class="team-member">
+            <figure>
+              <ul class="social">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+              <img src="/assets/media/img/team/person_1.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <div class="p-3">
+              <h3>Kaiara Spencer</h3>
+              <span class="position">Product Manager</span>
             </div>
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+            <figure>
+              <ul class="social">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+              <img src="/assets/media/img/team/person_2.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <div class="p-3">
+              <h3>Dave Simpson</h3>
+              <span class="position">Product Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member">
+            <figure>
+              <ul class="social">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+              <img src="/assets/media/img/team/person_3.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <div class="p-3">
+              <h3>Ben Thompson</h3>
+              <span class="position">Product Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member">
+            <figure>
+              <ul class="social">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+              <img src="/assets/media/img/team/person_4.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <div class="p-3">
+              <h3>Chris Stewart</h3>
+              <span class="position">Product Manager</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

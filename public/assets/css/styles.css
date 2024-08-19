@@ -78,8 +78,7 @@
 }
 
 body {
-  background-image: url(/assets/media/img/bgall.jpg); 
-  background-repeat: no-repeat;
+  background-image: url(/assets/media/img/bg4.jpg);
   background-attachment: fixed;
   background-position: center;
   margin: 0;
@@ -12560,8 +12559,8 @@ header.masthead .h1 {
   padding: 0 20px 0 100px;
   text-align: left;
   /* border-radius: 15px;  */
-  background-color: rgba(233, 236, 239, 0.3); 
-  color: white;
+  background-color: rgba(233, 236, 239, 0.3);
+  color: var(--bs-primary);
 }
 
 .timeline>li .timeline-panel:before {
@@ -12632,12 +12631,12 @@ header.masthead .h1 {
 
 @media (min-width: 768px) {
   .timeline:before {
-    left: 10%;
+    left: 9.5%;
   }
 
   .timeline>li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     left: 10%;
   }
 
@@ -13623,4 +13622,78 @@ section {
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: .5rem;
+}
+
+.section-title {
+  
+}
+
+.team-member figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden; }
+
+.team-member .social {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  padding: 0;
+  bottom: 0;
+  padding: 10px;
+  -webkit-transform: translateX(-101%);
+  -ms-transform: translateX(-101%);
+  transform: translateX(-101%);
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  background: var(--bs-primary); }
+  .team-member .social li {
+    list-style: none; }
+    .team-member .social li a {
+      display: inline-block;
+      padding: 5px;
+      color: #fff; }
+
+.team-member h3 {
+  color: #000;
+  margin: 0;
+  bottom: 0;
+  font-size: 1.2rem; }
+
+.team-member .position {
+  color: #cccccc;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .05rem; }
+
+.team-member:hover .social {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%); }
+
+.logo-container {
+  overflow: hidden;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  gap: 15rem;
+  padding: 1rem;
+  animation: infinite-scroll 15s linear infinite;
+}
+
+.logo img {
+  height: 5rem;
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  } 
+  to {
+    transform: translateX(-100%);
+  }
 }

@@ -6,7 +6,7 @@
       <h2 class="textheader my-4 fw-bold rounded p-3" style="background: var(--bs-gray-200);">OUR CUSTOMERS</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         @foreach ($customers as $index => $customers)
-          <div class="col" data-aos="fade-in" data-aos-duration="1000">
+          <div class="col shadow" data-aos="fade-in" data-aos-duration="1000">
             <div class="card h-100" style="background: var(--bs-gray-200);">
               <img src="{{ asset("storage/$customers->image") }}" class="card-img-top" alt="...">
               <div class="text-on-image-left rounded py-2 px-3">{{ $customers->branch }}</div>

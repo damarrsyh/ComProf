@@ -39,6 +39,22 @@
     <script src="/assets/js/scripts.js"></script>
     <!--Jquery-->
     <script src="/assets/js/jquery-3.6.1.min.js"></script>
+    {{-- 
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="/assets/css/aos.css">
+
+    <link rel="stylesheet" href="/assets/css/styleteam.css"> --}}
   </head>
 
   <body>
@@ -79,7 +95,7 @@
 
     @yield('pages')
 
-    <section class="page-section position-relative" style="background-color: rgba(233, 236, 239, 0.3)">
+    <section class="page-section position-relative" style="background-color: var(--bs-primary)">
       {{-- <div class="custom-shape-divider-top-1714014772">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
@@ -91,7 +107,7 @@
         <br>
         <div class="row mx-6">
           <div class="col-md-4">
-            <h3 class="text-white fs-2">
+            <h3 class=" fs-2 text-white">
               Complaint Services :
             </h3>
             <br>
@@ -254,6 +270,20 @@
         $('.change-background').click()
       }
     </script>
+    {{-- 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <script src="js/main.js"></script> --}}
     @yield('footer')
   </body>
 

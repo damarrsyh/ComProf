@@ -10,7 +10,7 @@
           </div>
         </div>
       </div>
-      <div class="row my-2 shadow rounded" style="background-color: rgba(233, 236, 239, 0.3); color: white;">
+      <div class="row my-2 shadow rounded" style="background-color: rgba(233, 236, 239, 0.3);">
         <div class="col-5 p-4">
           <h2 class="section-heading textheader fw-bold pt-3 text-center">
             OUR VISION
